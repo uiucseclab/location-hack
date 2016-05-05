@@ -1,0 +1,21 @@
+One can easily obtain a Flickr API_KEY once it has a Flickr account. 
+
+API_KEY = 686a04cc684a9b86ac053496b73c01c0
+Secret = 44aeb63b5c759c19
+
+
+This api allows us to get all photos, including its detailed information, 
+of a specific user. As long as the attacker learns the user_id of the victim, 
+it can easily execute the attack to learn the vicim's locations. 
+Further, the URL has a parameter 'page' to determine which page of 
+photos it will retrieve. To obtain all photos, one can increase this 
+parameter until no results are returned. The 'flickr_result.json' contains 
+the returned results using the following URL
+
+https://api.flickr.com/services/rest/?user_id=48247111@N07&format=json&nojsoncallback=1&extras=original_format,tags,description,geo,date_upload,owner_name&page=1&method=flickr.photos.search&format=json&nojsoncallback=1&api_key=686a04cc684a9b86ac053496b73c01c0
+
+
+
+Just for fun, the Following API allows us to obtain the top places with most posted photos.
+
+https://api.flickr.com/services/rest/?method=flickr.places.getTopPlacesList&place_type_id=7&format=json&nojsoncallback=1&api_key=686a04cc684a9b86ac053496b73c01c0

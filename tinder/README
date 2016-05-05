@@ -1,0 +1,13 @@
+The hack is based on the tool 'tinderbot'
+
+With tinderbot, we can get the full information the tinder user, such as its name, locations and photos
+
+We can get the all recommended users of a given user. The returned information 
+includes the geo locations of each user. In our report, we introduce an 
+attack strategy to disclose one victim's locations. 
+
+NOTE: Bundle is reqired for running the ruby code. We have provide the gem files. 
+Once you have bundle installed, run 'bundle install' to install all required 
+module in the gem files. After that, run 'bundle exec ruby bot.py' to execute 
+the code. Also, the Facebook creditial may be outdated. If so, you will need to 
+provide a valid Facebook creditial that has been used for Tinder login. 
